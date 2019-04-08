@@ -24,13 +24,9 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap/dist/css/star-rating.css",
               "src/styles.css"
             ],
             "scripts": [
-         
-              "node_modules/bootstrap/dist/js/Nbootstrap.min.js",
-              "node_modules/bootstrap/dist/js/star-rating.js",
               "node_modules/jquery/dist/jquery.js"
               
               
