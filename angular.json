@@ -23,10 +23,17 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/vendors/iconfonts/mdi/css/materialdesignicons.min.css",
+              "node_modules/bootstrap/vendors/css/vendor.bundle.base.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": [
+              "node_modules/bootstrap/vendors/js/vendor.bundle.base.js",
+              "node_modules/bootstrap/vendors/js/vendor.bundle.addons.js",
+              "node_modules/bootstrap/js/off-canvas.js",
+              "node_modules/bootstrap/js/misc.js",
+              "node_modules/bootstrap/js/dashboard.js",
               "node_modules/jquery/dist/jquery.js"
               
               
