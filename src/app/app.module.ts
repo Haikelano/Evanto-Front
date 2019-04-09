@@ -10,6 +10,7 @@ import { SlideComponent } from './aceuil/slide/slide.component';
 import { FooterComponent } from './aceuil/footer/footer.component';
 import { UsersComponent } from './users/users.component';
 import { EvenementComponent } from './evenement/evenement.component';
+import { RegisterComponent } from './users/register/register.component';
 
 
 @NgModule({
@@ -22,10 +23,12 @@ import { EvenementComponent } from './evenement/evenement.component';
     FooterComponent,
     UsersComponent,
     EvenementComponent,
+    RegisterComponent,
     ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
