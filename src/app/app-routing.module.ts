@@ -3,9 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppModule } from './app.module';
 
 import { AppComponent } from './app.component';
+import { AceuilComponent } from './aceuil/aceuil.component';
 
 const routes: Routes = [
-  {path: "**" ,component:AppComponent},
+  {path: "**" ,component:AceuilComponent},
+  {path: "Acceuil", component:AceuilComponent}
 
 ];
 
