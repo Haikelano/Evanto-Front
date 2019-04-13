@@ -1,12 +1,13 @@
 export class Users {
-    id: string;
-    name: string;
-    prenom: string;
-    username: string;
-    email: string;
-    tel: string;
-    contry: string;
-    etat: boolean;
-        constructor() {
-    }
+
+
+  constructor(
+    public username: string,
+    public name: string,
+    public prenom: string,
+    public email: string,
+    public tel: string,
+    public contry: string
+  ) {
+  }
 }

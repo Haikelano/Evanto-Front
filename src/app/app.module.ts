@@ -11,7 +11,8 @@ import { FooterComponent } from './aceuil/footer/footer.component';
 import { UsersComponent } from './users/users.component';
 import { EvenementComponent } from './evenement/evenement.component';
 import { RegisterComponent } from './users/register/register.component';
-
+import {ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { RegisterComponent } from './users/register/register.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

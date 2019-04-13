@@ -7,10 +7,9 @@ import { AceuilComponent } from './aceuil/aceuil.component';
 import { RegisterComponent } from './users/register/register.component';
 
 const routes: Routes = [
-  {path: "Acceuil", component:AceuilComponent},
-  {path: "register", component: RegisterComponent},
-  {path: "**" ,component:AceuilComponent},
-
+  {path: 'Acceuil', component: AceuilComponent},
+  {path: 'register', component: RegisterComponent},
+  {path: '' , component: AceuilComponent}
 ];
 
 @NgModule({
