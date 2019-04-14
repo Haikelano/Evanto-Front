@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {Users} from '../../models/users.model';
-import {UsersService} from '../../services/users.service';
+import {Users} from '../../../../../models/users.model';
+import {UsersService} from '../../../../../services/users.service';
 import {Route, Router} from '@angular/router';
 import {PartialObserver, Subscription} from 'rxjs';
 
