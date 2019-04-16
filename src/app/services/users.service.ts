@@ -19,5 +19,8 @@ export class UsersService {
   verifUsername(username: any): Observable<Object>  {
     return this.http.post(this.Url + 'users/verif', username);
   }
+  getUserById(id: string) {
+    return this.http.get(this.Url + 'users/' + id);
+  }
 
 }

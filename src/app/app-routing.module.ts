@@ -11,12 +11,12 @@ import {CommonModule} from '@angular/common';
 import {DashbordComponent} from './container/aceuil/index/dashbord/dashbord.component';
 
 const routes: Routes = [
-  {path: 'acceuil', component: AppComponent},
+  {path: 'acceuil', component: DashbordComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'profile', component: ProfileComponent},
+  {path: 'users/:id', component: ProfileComponent},
   {path: 'users', component: UsersComponent},
   {path: 'dashbord', component: DashbordComponent},
-  {path: '' , component: AppComponent}
+  {path: '' , component: DashbordComponent}
 ];
 
 @NgModule({
