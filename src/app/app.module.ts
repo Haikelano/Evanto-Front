@@ -10,11 +10,12 @@ import { SlideComponent } from './container/aceuil/slide/slide.component';
 import { FooterComponent } from './container/aceuil/footer/footer.component';
 import { UsersComponent } from './container/aceuil/index/users/users.component';
 import { EvenementComponent } from './container/aceuil/index/evenement/evenement.component';
-import { RegisterComponent } from './container/aceuil/index/users/register/register.component';
+import { RegisterComponent } from './container/authentification/register/register.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ProfileComponent } from './container/aceuil/index/users/profile/profile.component';
 import { DashbordComponent } from './container/aceuil/index/dashbord/dashbord.component';
+import { AuthentificationComponent } from './container/authentification/authentification.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { DashbordComponent } from './container/aceuil/index/dashbord/dashbord.co
     RegisterComponent,
     ProfileComponent,
     DashbordComponent,
+    AuthentificationComponent,
     ],
   imports: [
     BrowserModule,
