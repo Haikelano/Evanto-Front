@@ -8,7 +8,7 @@ import {Observable} from 'rxjs';
 })
 export class UsersService {
   id: string = 'cb2594122b19416427d20a2';
-  Url = 'http://localhost:8080/';
+  Url = 'http://www.localhost:8080/';
 
   constructor(private http: HttpClient) { }
 
