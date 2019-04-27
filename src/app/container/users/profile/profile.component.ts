@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {UsersService} from '../../../services/users.service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {Users} from '../../../models/users.model';
 
 
@@ -12,8 +12,9 @@ import {Users} from '../../../models/users.model';
 export class ProfileComponent implements OnInit {
   name: string;
   user: any;
+
   dd: string = '5cb8b54d2c43e914f8a4f6c7';
-  constructor(private usersService: UsersService, private route: ActivatedRoute) {
+  constructor(private usersService: UsersService, private route: ActivatedRoute, private router: Router) {
   }
 
   ngOnInit() {
@@ -24,4 +25,11 @@ export class ProfileComponent implements OnInit {
            }
     );
       }
+
+  nav() {
+   this.router.navigate(['Dashbord']);
+  }
+  onUpdate() {
+   this.usersService.updateUser(this.user);
+  }
 }

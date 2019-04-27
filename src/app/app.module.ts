@@ -11,7 +11,7 @@ import { FooterComponent } from './container/aceuil/footer/footer.component';
 import { UsersComponent } from './container/users/users.component';
 import { EvenementComponent } from './container/aceuil/index/evenement/evenement.component';
 import { RegisterComponent } from './container/authentification/register/register.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ProfileComponent } from './container/users/profile/profile.component';
 import { DashbordComponent } from './container/aceuil/index/dashbord/dashbord.component';
@@ -38,7 +38,8 @@ import { ContainerComponent } from './container/container.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

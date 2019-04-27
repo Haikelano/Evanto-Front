@@ -23,4 +23,8 @@ export class UsersService {
     return this.http.get(this.Url + 'users/' + id);
   }
 
+  updateUser(data: any) {
+    return this.http.post(this.Url + 'users/update', data);
+  }
+
 }

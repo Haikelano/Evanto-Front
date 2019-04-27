@@ -1,2 +1,54 @@
-<p>profile works</p>
-{{user | json}}
+
+
+<div class="row">
+    <div class="col-md-3">
+      <nav class="sidebar " id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <img src="assets/images/faces/face1.jpg" alt="avatar">
+            <span class="login-status online"></span> <!--change to offline or busy as needed-->
+            <div class="nav-profile-text d-flex flex-column">
+              <span class="font-weight-bold mb-3">David Grey. H</span>
+            </div>
+            Je suis Haykel Maaoui ingenier en System D'information Informatique
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+<div class="col-md-5">
+
+  <form>
+  <div class="form-group">
+    <label for="username" >Username : </label>
+    <input class="form-control" type="text" [(ngModel)]="user.username" id="username">
+  </div>
+
+  <div class="form-group">
+    <label for="name" >Name : </label>
+    <input class="form-control" type="text"  [(ngModel)]="user.name" id="name">
+  </div>
+  <div class="form-group">
+    <label for="prenom" >Prenom : </label>
+    <input class="form-control" type="text"  [(ngModel)]="user.prenom" id="prenom">
+  </div>
+  <div class="form-group">
+    <label for="email" >Email : </label>
+    <input class="form-control" type="email"  [(ngModel)]="user.email" id="email">
+  </div>
+  <div class="form-group">
+    <label for="tel" >Tel : </label>
+    <input class="form-control" type="text"  [(ngModel)]="user.tel" id="tel">
+  </div>
+  <div class="form-group">
+    <label for="contry" >Contry : </label>
+    <input class="form-control" type="text"  [(ngModel)]="user.contry" id="contry">
+  </div>
+
+<button class="btn btn-outline-primary" type="submit">Modifier</button>
+  <button class="btn btn-outline-info" style="margin-left: 20px" (click)="nav()">Annuler</button>
+  </form>
+</div>
+ </div>
+
+
