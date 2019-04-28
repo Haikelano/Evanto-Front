@@ -1,1 +1,57 @@
-<p>Users Works</p>
+<!-- <div *ngFor= "let use of user">
+  {{use.name}}
+</div>-->
+<div class="col-lg-12 grid-margin stretch-card">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">List Of All Users</h4>
+      <p class="card-description">
+
+      </p>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>
+            User
+          </th>
+          <th>
+            First name
+          </th>
+          <th>
+            Progress
+          </th>
+          <th>
+            Amount
+          </th>
+          <th>
+           Action
+          </th>
+        </tr>
+        </thead>
+        <tbody >
+        <tr *ngFor="let use of user; let i = index">
+          <td class="py-1">
+            <img src="assets/images/faces/face1.jpg" alt="avatar">
+            <a href=""><span style="margin-left: 5px">{{use.username}}</span> </a>
+          </td>
+          <td>
+            {{use.name}} {{use.prenom }}
+          </td>
+          <td>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </td>
+          <td>
+            $ 77.99
+          </td>
+          <td>
+            <button type="button" class="btn btn-gradient-secondary btn-rounded btn-fw btn-xs">Voir Event</button>
+            <button type="button" class="btn btn-gradient-danger btn-rounded btn-fw btn-xs" style="margin-left: 10px">Delete</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

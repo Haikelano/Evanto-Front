@@ -12,42 +12,60 @@
             </div>
             Je suis Haykel Maaoui ingenier en System D'information Informatique
           </li>
+          <li>
+            <div class="line" style="margin-top: 15px"></div>
+          </li>
+          <li style="margin-left: 30px">
+            <span style="color: #a01a1f"> Last Event Created</span>
+          </li>
+          <li>
+            <div class="line"></div>
+          </li>
         </ul>
+
+
       </nav>
+
     </div>
 
 <div class="col-md-5">
+<form>
 
-  <form>
   <div class="form-group">
     <label for="username" >Username : </label>
-    <input class="form-control" type="text" [(ngModel)]="user.username" id="username">
+    <input class="form-control" type="text" style="font-size: 17px" [(ngModel)]="users.username" id="username" disabled [ngModelOptions]="{standalone: true}">
   </div>
 
   <div class="form-group">
     <label for="name" >Name : </label>
-    <input class="form-control" type="text"  [(ngModel)]="user.name" id="name">
+    <input class="form-control" type="text"  [(ngModel)]="users.name" id="name"[ngModelOptions]="{standalone: true}">
   </div>
   <div class="form-group">
     <label for="prenom" >Prenom : </label>
-    <input class="form-control" type="text"  [(ngModel)]="user.prenom" id="prenom">
+    <input class="form-control" type="text"  [(ngModel)]="users.prenom" id="prenom"[ngModelOptions]="{standalone: true}">
   </div>
   <div class="form-group">
     <label for="email" >Email : </label>
-    <input class="form-control" type="email"  [(ngModel)]="user.email" id="email">
+    <input class="form-control" type="email"  [(ngModel)]="users.email" id="email"[ngModelOptions]="{standalone: true}">
   </div>
   <div class="form-group">
     <label for="tel" >Tel : </label>
-    <input class="form-control" type="text"  [(ngModel)]="user.tel" id="tel">
+    <input class="form-control" type="text"  [(ngModel)]="users.tel" id="tel"[ngModelOptions]="{standalone: true}">
   </div>
   <div class="form-group">
     <label for="contry" >Contry : </label>
-    <input class="form-control" type="text"  [(ngModel)]="user.contry" id="contry">
+    <input class="form-control" type="text"  [(ngModel)]="users.contry" id="contry"[ngModelOptions]="{standalone: true}">
   </div>
 
-<button class="btn btn-outline-primary" type="submit">Modifier</button>
+<button class="btn btn-outline-primary" type="submit" (click)="onUpdate()"> Modifier</button>
   <button class="btn btn-outline-info" style="margin-left: 20px" (click)="nav()">Annuler</button>
-  </form>
+</form>
+
+
+  <div [hidden]="!submitted">
+    <div  class="alert alert-success">
+      You Profil Update successfully!
+    </div>
 </div>
  </div>
 

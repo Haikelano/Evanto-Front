@@ -11,5 +11,7 @@ export class AuthentificationComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  getUrl() {
+    return "url('https://tourismelacbrome.com/wp-content/uploads/sites/3/2016/08/brome-evenement-background-banner.jpg')";
+  }
 }

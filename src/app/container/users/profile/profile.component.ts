@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {UsersService} from '../../../services/users.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Users} from '../../../models/users.model';
+import {UpdateUser} from '../../../models/updateUser.model';
 
 
 @Component({
@@ -11,9 +12,11 @@ import {Users} from '../../../models/users.model';
 })
 export class ProfileComponent implements OnInit {
   name: string;
+  submitted: boolean = false;
   user: any;
-
-  dd: string = '5cb8b54d2c43e914f8a4f6c7';
+  id: string;
+  users: UpdateUser = new UpdateUser();
+  dd: string = '5cb2648922b19416427d20a5';
   constructor(private usersService: UsersService, private route: ActivatedRoute, private router: Router) {
   }
 
@@ -22,6 +25,9 @@ export class ProfileComponent implements OnInit {
     this.usersService.getUserById(this.dd).subscribe(
       reponse => {
           this.user = reponse;
+          console.log('le id de notre user est ' + this.user.id);
+          this.users = this.user;
+          this.id = this.user.id;
            }
     );
       }
@@ -30,6 +36,15 @@ export class ProfileComponent implements OnInit {
    this.router.navigate(['Dashbord']);
   }
   onUpdate() {
-   this.usersService.updateUser(this.user);
+   this.usersService.updateUser(this.id, this.users).
+     subscribe(
+       data => {
+         console.log(data);
+         console.log('Succes for update');
+         this.users = data as UpdateUser;
+         this.submitted = true;
+       },
+       error => console.log(error));
   }
+
 }

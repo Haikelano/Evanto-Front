@@ -12,6 +12,7 @@ import {DashbordComponent} from './container/aceuil/index/dashbord/dashbord.comp
 import {IndexComponent} from './container/aceuil/index/index.component';
 import {AuthentificationComponent} from './container/authentification/authentification.component';
 import {ContainerComponent} from './container/container.component';
+import {EvenementComponent} from './container/aceuil/index/evenement/evenement.component';
 
 const routes: Routes = [
 
@@ -23,6 +24,8 @@ const routes: Routes = [
       {path: 'dashbord', component: DashbordComponent},
       {path: 'users/:id', component: ProfileComponent},
       {path: 'users', component: UsersComponent},
+      {path: 'event', component: EvenementComponent},
+      {path: 'listevent', component: IndexComponent}
              ]
   } ,
   { path: '' ,
